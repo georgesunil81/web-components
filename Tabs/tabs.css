@@ -1,0 +1,40 @@
+.tabComponent
+{
+	position: relative;
+}
+
+.tabComponent .tab
+{
+	float: left;
+}
+
+.tabComponent .tab .content
+{
+	margin-top: 10px;
+	position: absolute;
+	background-color: white;
+	left: 0px;
+	width: 100%;
+}
+
+.tab-radio
+{
+	display: none;
+}
+
+.tab label
+{
+	margin-right: 10px;
+}
+
+.tab-radio:checked ~ label
+{
+	padding: 5px;
+	color: white;
+	background-color: black;
+}
+
+.tab-radio:checked ~ .content
+{
+	z-index: 1;
+}
